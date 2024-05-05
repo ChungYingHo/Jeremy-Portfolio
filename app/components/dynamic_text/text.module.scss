@@ -1,0 +1,88 @@
+.container {
+    display: flex;
+    height: 50px; //
+    width: 900px; //這邊我有對最長文字的寬
+    overflow: hidden; //把其他不需要的地方隱藏
+    position: relative;
+}
+
+.staticText {
+    white-space: nowrap; //文字讓他不要換行
+}
+
+//處理-2：打字效果
+.dynamicText {
+    position: relative; //相對於偽元素而言
+    height: 50px;
+    margin-left: 10px;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #EDDE5D;
+
+    &:before {
+        content: '';
+        position: absolute;
+        border-left: solid 1px #EDDE5D;
+        //border-left 用來做會閃爍的打字線
+        width: 100%;
+        height: 50%;
+        top: 0;
+        left: 0;
+        background: black; //偽元素就是一塊黑黑的傢伙把其他字遮起來～
+        animation: typewriter 4s steps(23) infinite,
+            blink 0.5s steps(23) infinite,
+            //animation一次可以放很多個
+            //animation的step就是將想要的效果拆解成幾步驟的意思
+            //這邊以最長的文字長度23拆解出來～
+            //typewriter 效果就是一直讓黑黑的遮布往右邊移動
+            //blink 效果就是讓打字的線|一直閃爍
+
+    }
+}
+
+@keyframes typewriter {
+
+    40%,
+    60% {
+        left: 100%;
+    }
+
+    //40%~60% 讓字固定在最長的長度
+    100% {
+        left: 0;
+    }
+
+    //100% 再讓所有字消失，好像有人在把字刪掉的感覺～
+}
+
+@keyframes blink {
+    from {
+        border-left: solid 1px #EDDE5D;
+    }
+
+    to {
+        border-left: solid 1px transparent;
+    }
+}
+
+//處理-3：換字效果
+
+.dynamicTextWrapper {
+    position: relative; //因為要移動
+    top: 0px;
+    animation: moveup 12s steps(3) infinite;
+    //每一行打字設定是4s所以3s需要花費 4*3 =12秒時間移到最後一行
+    //因為3行所以這個動畫花steps(3)次解決～
+}
+
+@keyframes moveup {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: -150px;
+    }
+
+    //每行高度是50px，要讓最後一行出現就是50px*3行=150px囉～
+}
