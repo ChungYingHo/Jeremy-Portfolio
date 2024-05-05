@@ -1,13 +1,45 @@
-import styles from './text.module.scss'
+'use client'
+
+import { useEffect, useState } from 'react'
+
+const FirstText = () => {
+  return (
+    <p className="before:animate-typewriter relative mr-2 flex h-[5rem] items-center whitespace-nowrap text-5xl font-black text-cyan-300 before:absolute before:left-0 before:top-0 before:h-full before:w-full before:border-l-2 before:border-yellow-300 before:bg-gray-600 before:content-['']">
+      a Web Developer.
+    </p>
+  )
+}
+
+const SecondText = () => {
+  return (
+    <p className="before:animate-typewriter relative mr-2 flex h-[5rem] items-center whitespace-nowrap text-5xl font-black text-cyan-300 before:absolute before:left-0 before:top-0 before:h-full before:w-full before:border-l-2 before:border-yellow-300 before:bg-gray-600 before:content-['']">
+      a Blogger.
+    </p>
+  )
+}
 
 export default function Text() {
+  const [showFirstText, setText] = useState(true)
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setText((showFirstText) => !showFirstText)
+    }, 4000)
+    return () => clearInterval(interval)
+  }, [showFirstText])
+
   return (
-    <div className={styles.container}>
-      <div className={styles.staticText}>I will help you </div>
-      <div className={styles.dynamicTextWrapper}>
-        <div className={styles.dynamicText}>expand your business</div>
-        <div className={styles.dynamicText}>find the right customer</div>
-        <div className={styles.dynamicText}>level up your brand</div>
+    <div>
+      <p className="mb-10 whitespace-nowrap text-xl text-cyan-200">
+        Hi, my name is
+      </p>
+      <p className="mb-5 text-5xl font-bold text-slate-300">Chung-Ying, Ho.</p>
+      <div className="relative flex items-center gap-5 overflow-hidden">
+        <p className="whitespace-nowrap text-5xl font-bold text-slate-400">
+          I am{' '}
+        </p>
+        <div className="relative">
+          {showFirstText ? <FirstText /> : <SecondText />}
+        </div>
       </div>
     </div>
   )
