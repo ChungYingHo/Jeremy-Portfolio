@@ -45,7 +45,11 @@ export default function Header() {
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="https://codefictionist.com/">
+          <Link
+            color="foreground"
+            href="https://codefictionist.com/"
+            target="_blank"
+          >
             Blog
           </Link>
         </NavbarItem>
@@ -55,9 +59,10 @@ export default function Header() {
           <Button
             isIconOnly
             as={Link}
-            color="success"
+            color="secondary"
             href="https://github.com/ChungYingHo"
-            variant="flat"
+            target="_blank"
+            variant="bordered"
           >
             <GitHubIcon />
           </Button>
