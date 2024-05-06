@@ -29,7 +29,7 @@ export default function Header() {
         />
         <NavbarBrand>
           <Logo />
-          <p className="text-foreground font-bold">Chung-Ying</p>
+          <p className="font-bold text-foreground">Chung-Ying</p>
         </NavbarBrand>
       </NavbarContent>
 
