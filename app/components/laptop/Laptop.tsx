@@ -1,11 +1,12 @@
 import React from 'react'
+import HackEffect from './HackEffect'
 
 const Laptop = () => {
   return (
     <div className="relative h-72 w-[28rem] overflow-hidden rounded-lg bg-gray-800 shadow-lg">
       {/* Screen Content */}
       <div className="absolute inset-0 flex items-center justify-center p-4">
-        <h1 className="text-lg font-bold text-white">Computer Screen</h1>
+        <HackEffect width={448} height={288} />
       </div>
 
       {/* Webcam */}
