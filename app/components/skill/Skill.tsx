@@ -26,7 +26,7 @@ const Skill = () => {
             {/* front framework */}
             <Framework />
           </div>
-          <div className="mt-36 flex justify-between">
+          <div className="mt-16 flex justify-between">
             {/* front end CssRelative skill icons */}
             <CssRelative />
             {/* backend skill */}
