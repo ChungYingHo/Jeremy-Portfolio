@@ -1,5 +1,6 @@
 import Text from './components/dynamic_text/Text'
 import Laptop from './components/laptop/Laptop'
+import Skill from './components/skill/Skill'
 
 export default function Home() {
   return (
@@ -12,8 +13,8 @@ export default function Home() {
         <div className="h-[calc(100vh-4rem)] w-full snap-center bg-gray-600 px-52">
           div2
         </div>
-        <div className="h-[calc(100vh-4rem)] w-full snap-center bg-gray-600 px-52">
-          div3
+        <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center justify-center bg-gray-600 px-52">
+          <Skill />
         </div>
       </div>
     </main>
