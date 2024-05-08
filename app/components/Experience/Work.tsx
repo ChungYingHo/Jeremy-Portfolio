@@ -17,7 +17,7 @@ const Work = () => {
     }
   ]
   return (
-    <Card className="w-2/3" shadow="sm">
+    <Card className="w-1/2" shadow="sm">
       <CardHeader>
         <h4 className="text-2xl">Experience</h4>
       </CardHeader>

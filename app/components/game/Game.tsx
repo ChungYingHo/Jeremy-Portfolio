@@ -12,6 +12,7 @@ const Game = () => {
   const cactusRef = useRef(null)
   const cactusCounted = useRef(false)
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const jump = () => {
     if (!isJumping) {
       setIsJumping(true)
@@ -86,25 +87,25 @@ const Game = () => {
           <Button
             onClick={startGame}
             color="warning"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+            className="absolute left-1/2 top-[10%] -translate-x-1/2"
           >
             Start Game
           </Button>
           <div className="relative top-[130px] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
-          <div className="relative left-[580px] top-[88px] h-[40px] w-[20px] animate-castusDisplay bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
+          <div className="animate-castusDisplay relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
         </>
       )}
       {gameOver && (
         <>
-          <Button
-            onClick={restartGame}
-            color="danger"
-            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
-          >
-            Try Again
-          </Button>
+          <div className="absolute left-1/2 top-[10%] flex -translate-x-1/2 flex-col items-center gap-1">
+            <Button onClick={restartGame} color="danger">
+              Try Again
+            </Button>
+            <p>Total score: {cactusPassed}</p>
+          </div>
+
           <div className="relative top-[130px] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
-          <div className="relative left-[580px] top-[88px] h-[40px] w-[20px] animate-castusDisplay bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
+          <div className="animate-castusDisplay relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
         </>
       )}
       <div
@@ -113,7 +114,7 @@ const Game = () => {
       ></div>
       <div
         ref={cactusRef}
-        className={`relative left-[580px] top-[88px] h-[40px] w-[20px] animate-cactus bg-[url('../public/cactus.png')] bg-[length:20px_40px] ${!gameStarted ? 'hidden' : ''}`}
+        className={`animate-cactus relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px] ${!gameStarted ? 'hidden' : ''}`}
       ></div>
       {gameStarted && (
         <div className="absolute right-0 top-0 m-4 text-lg">

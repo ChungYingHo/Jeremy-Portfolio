@@ -43,7 +43,7 @@ const Education = () => {
   ]
 
   return (
-    <Card className="w-1/3" shadow="sm">
+    <Card className="w-1/2" shadow="sm">
       <CardHeader>
         <h4 className="text-2xl">Education and Certifications</h4>
       </CardHeader>
@@ -73,45 +73,39 @@ const Education = () => {
         <Divider />
         <p className="my-3 text-xl">Professional Certifications</p>
         {/* todo certification card */}
-        {certifications.map((certification, index) => (
-          <Card
-            key={index}
-            isBlurred
-            className="mb-3 w-full border-none !bg-slate-600"
-          >
-            <CardHeader className="flex gap-3">
-              <Image
-                alt="nextui logo"
-                height={40}
-                radius="sm"
-                src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-                width={40}
-              />
-
-              <div className="flex flex-col">
-                <Link
-                  color={
-                    certification.color as
-                      | 'success'
-                      | 'warning'
-                      | 'foreground'
-                      | 'primary'
-                      | 'secondary'
-                      | 'danger'
-                      | undefined
-                  }
-                  href={certification.link}
-                  target="_blank"
-                >
-                  {certification.name}
-                </Link>
-                <p className="text-small text-default-500">
-                  {certification.mechanism}
-                </p>
-              </div>
-            </CardHeader>
-          </Card>
-        ))}
+        <div className="flex flex-wrap justify-between">
+          {certifications.map((certification, index) => (
+            <Card
+              key={index}
+              isBlurred
+              className="mb-3 w-[calc(50%-10px)] border-none !bg-slate-600"
+            >
+              <CardHeader className="flex gap-3">
+                <div className="flex flex-col">
+                  <Link
+                    color={
+                      certification.color as
+                        | 'success'
+                        | 'warning'
+                        | 'foreground'
+                        | 'primary'
+                        | 'secondary'
+                        | 'danger'
+                        | undefined
+                    }
+                    href={certification.link}
+                    target="_blank"
+                  >
+                    {certification.name}
+                  </Link>
+                  <p className="text-small text-default-500">
+                    {certification.mechanism}
+                  </p>
+                </div>
+              </CardHeader>
+            </Card>
+          ))}
+        </div>
       </CardBody>
     </Card>
   )

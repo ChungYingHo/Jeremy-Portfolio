@@ -28,11 +28,11 @@ export default function Home() {
   }, [])
   return (
     <main className="h-[calc(100vh-4rem)] w-screen snap-y snap-mandatory overflow-y-scroll bg-default-300 text-foreground-800">
-      <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center justify-between bg-gray-600 px-52">
+      <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center justify-between bg-gray-600 px-28">
         <Text />
         <Game />
       </div>
-      <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center bg-gray-600 px-52">
+      <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center bg-gray-600 px-28">
         <Experience />
       </div>
       <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center justify-center bg-gray-600 px-28">
