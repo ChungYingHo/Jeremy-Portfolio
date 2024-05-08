@@ -11,7 +11,7 @@ import {
 const Education = () => {
   const certifications = [
     {
-      name: 'ALPHA Camp Full Stack Web Development Program',
+      name: 'Full Stack Web Development Program',
       link: 'https://lighthouse.alphacamp.co/certificates/e3ddc657-fff1-4418-a2a3-26410aba4c76',
       color: 'success',
       mechanism: 'ALPHA Camp'
@@ -29,10 +29,10 @@ const Education = () => {
       mechanism: 'Coursera'
     },
     {
-      name: 'Meta Back-End Developer (In Progress)',
+      name: 'Meta Back-End Developer',
       link: '#',
       color: 'warning',
-      mechanism: 'Meta, Coursera'
+      mechanism: 'Meta, Coursera (In Progress)'
     },
     {
       name: 'Google Data Analytics',
@@ -61,14 +61,12 @@ const Education = () => {
               width={40}
             />
             <div className="flex flex-col">
-              <p className="text-md">National Taiwan University</p>
+              <p className="text-md">
+                National Taiwan University - Master degree of Agronomy
+              </p>
               <p className="text-small text-default-500">2020.09-2022.07</p>
             </div>
           </CardHeader>
-          <Divider />
-          <CardBody>
-            <p>Master degree of Agronomy.</p>
-          </CardBody>
         </Card>
         <Divider />
         <p className="my-3 text-xl">Professional Certifications</p>
@@ -78,7 +76,7 @@ const Education = () => {
             <Card
               key={index}
               isBlurred
-              className="mb-3 w-[calc(50%-10px)] border-none !bg-slate-600"
+              className="mb-2 w-[calc(50%-10px)] border-none !bg-slate-600"
             >
               <CardHeader className="flex gap-3">
                 <div className="flex flex-col">

@@ -8,6 +8,7 @@ const Game = () => {
   const [gameStarted, setGameStarted] = useState(false)
   const [gameOver, setGameOver] = useState(false)
   const [cactusPassed, setCactusPassed] = useState(0)
+  const [isRestart, setIsRestart] = useState(false)
   const dinoRef = useRef(null)
   const cactusRef = useRef(null)
   const cactusCounted = useRef(false)
@@ -36,6 +37,7 @@ const Game = () => {
     setIsJumping(false)
     cactusCounted.current = false
     setTimeout(startGame, 100) // 延遲啟動遊戲，避免立即碰撞
+    setIsRestart(true)
   }
 
   useEffect(() => {
@@ -82,7 +84,7 @@ const Game = () => {
 
   return (
     <div className="relative h-[200px] w-[600px] border-b-2">
-      {!gameStarted && !gameOver && (
+      {!gameStarted && !gameOver && !isRestart && (
         <>
           <Button
             onClick={startGame}
