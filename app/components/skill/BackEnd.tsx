@@ -14,7 +14,7 @@ import mysqlIcon from '@/public/sql-mysql.svg'
 
 const Backend = () => {
   return (
-    <Card isBlurred className="w-fit border-none bg-background/60">
+    <Card isBlurred className="w-fit border-none !bg-slate-600">
       <CardHeader>
         <p>Front-End Backend</p>
       </CardHeader>

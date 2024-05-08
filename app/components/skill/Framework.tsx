@@ -15,7 +15,7 @@ import piniaIcon from '@/public/pinia.svg'
 
 const Framework = () => {
   return (
-    <Card isBlurred className="w-fit border-none bg-background/60">
+    <Card isBlurred className="w-fit border-none !bg-slate-600">
       <CardHeader>
         <p>Front-End Framework</p>
       </CardHeader>

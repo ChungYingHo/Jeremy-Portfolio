@@ -31,12 +31,39 @@ const config: Config = {
           '100%': {
             left: '0'
           }
+        },
+        jump: {
+          '0%': {
+            top: '143px'
+          },
+          '30%': {
+            top: '115px'
+          },
+          '50%': {
+            top: '70px'
+          },
+          '80%': {
+            top: '115px'
+          },
+          '100%': {
+            top: '143px'
+          }
+        },
+        cactus: {
+          '0%': {
+            left: '600px'
+          },
+          '100%': {
+            left: '-20px'
+          }
         }
       },
       animation: {
         blink: 'blink 1s infinite',
         typewriter:
-          'typewriter 4s steps(23) infinite, blink 0.5s steps(23) infinite'
+          'typewriter 4s steps(23) infinite, blink 0.5s steps(23) infinite',
+        jump: 'jump 0.3s linear',
+        cactus: 'cactus 1.2s infinite linear'
       }
     }
   },

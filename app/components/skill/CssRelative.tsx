@@ -15,7 +15,7 @@ import nextuiIcon from '@/public/nextui.svg'
 
 const CssRelative = () => {
   return (
-    <Card isBlurred className="w-fit border-none bg-background/60">
+    <Card isBlurred className="w-fit border-none !bg-slate-600">
       <CardHeader>
         <p>CSS Frameworks and Preprocessors</p>
       </CardHeader>

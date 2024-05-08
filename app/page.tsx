@@ -1,6 +1,6 @@
 import Text from './components/dynamic_text/Text'
 import Laptop from './components/laptop/Laptop'
-// import Game from './components/game/Game'
+import Game from './components/game/Game'
 import Experience from './components/Experience/Experience'
 import Skill from './components/skill/Skill'
 
@@ -13,11 +13,14 @@ export default function Home() {
           <Laptop />
           {/* <Game /> */}
         </div>
-        <div className="h-[calc(100vh-4rem)] w-full snap-center bg-gray-600 px-52">
+        <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center bg-gray-600 px-52">
           <Experience />
         </div>
         <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center justify-center bg-gray-600 px-28">
           <Skill />
+        </div>
+        <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center justify-center bg-gray-600 px-28">
+          <Game />
         </div>
       </div>
     </main>
