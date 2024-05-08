@@ -56,6 +56,14 @@ const config: Config = {
           '100%': {
             left: '-20px'
           }
+        },
+        cactusDisplay: {
+          '0%': {
+            left: '600px'
+          },
+          '100%': {
+            left: '300px'
+          }
         }
       },
       animation: {
@@ -63,7 +71,8 @@ const config: Config = {
         typewriter:
           'typewriter 4s steps(23) infinite, blink 0.5s steps(23) infinite',
         jump: 'jump 0.3s linear',
-        cactus: 'cactus 1.2s infinite linear'
+        cactus: 'cactus 1.2s infinite linear',
+        castusDisplay: 'cactusDisplay 1.2s infinite linear'
       }
     }
   },

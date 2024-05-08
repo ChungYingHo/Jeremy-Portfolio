@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useState, useRef } from 'react'
+import { Button } from '@nextui-org/react'
 
 const Game = () => {
   const [isJumping, setIsJumping] = useState(false)
@@ -79,22 +80,32 @@ const Game = () => {
   }, [gameStarted, isJumping, gameOver])
 
   return (
-    <div className="relative m-auto h-[200px] w-[600px] border-1">
+    <div className="relative h-[200px] w-[600px] border-b-2">
       {!gameStarted && !gameOver && (
-        <button
-          onClick={startGame}
-          className="absolute left-2 top-2 bg-blue-500 p-2 text-white"
-        >
-          Start Game
-        </button>
+        <>
+          <Button
+            onClick={startGame}
+            color="warning"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            Start Game
+          </Button>
+          <div className="relative top-[130px] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
+          <div className="animate-castusDisplay relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
+        </>
       )}
       {gameOver && (
-        <button
-          onClick={restartGame}
-          className="absolute left-2 top-2 bg-red-500 p-2 text-white"
-        >
-          Try Again
-        </button>
+        <>
+          <Button
+            onClick={restartGame}
+            color="danger"
+            className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2"
+          >
+            Try Again
+          </Button>
+          <div className="relative top-[130px] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
+          <div className="animate-castusDisplay relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
+        </>
       )}
       <div
         ref={dinoRef}
@@ -106,7 +117,7 @@ const Game = () => {
       ></div>
       {gameStarted && (
         <div className="absolute right-0 top-0 m-4 text-lg">
-          Cacti Jumped: {cactusPassed}
+          Cactus Jumped: {cactusPassed}
         </div>
       )}
     </div>
