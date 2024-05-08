@@ -94,7 +94,7 @@ const Game = () => {
             Start Game
           </Button>
           <div className="relative top-[130px] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
-          <div className="animate-castusDisplay relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
+          <div className="relative left-[580px] top-[88px] h-[40px] w-[20px] animate-castusDisplay bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
         </>
       )}
       {gameOver && (
@@ -107,7 +107,7 @@ const Game = () => {
           </div>
 
           <div className="relative top-[130px] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
-          <div className="animate-castusDisplay relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
+          <div className="relative left-[580px] top-[88px] h-[40px] w-[20px] animate-castusDisplay bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
         </>
       )}
       <div
@@ -116,7 +116,7 @@ const Game = () => {
       ></div>
       <div
         ref={cactusRef}
-        className={`animate-cactus relative left-[580px] top-[88px] h-[40px] w-[20px] bg-[url('../public/cactus.png')] bg-[length:20px_40px] ${!gameStarted ? 'hidden' : ''}`}
+        className={`relative left-[580px] top-[88px] h-[40px] w-[20px] animate-cactus bg-[url('../public/cactus.png')] bg-[length:20px_40px] ${!gameStarted ? 'hidden' : ''}`}
       ></div>
       {gameStarted && (
         <div className="absolute right-0 top-0 m-4 text-lg">
