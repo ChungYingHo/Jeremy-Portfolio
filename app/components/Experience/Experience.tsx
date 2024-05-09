@@ -4,7 +4,7 @@ import Work from './Work'
 
 const Experience = () => {
   return (
-    <div className="flex w-full gap-3">
+    <div className="flex w-full gap-3 lg:gap-5">
       <Work />
       <Education />
     </div>

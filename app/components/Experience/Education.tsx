@@ -11,7 +11,7 @@ import {
 const Education = () => {
   const certifications = [
     {
-      name: 'Full Stack Web Development Program',
+      name: 'Full Stack Web Dev',
       link: 'https://lighthouse.alphacamp.co/certificates/e3ddc657-fff1-4418-a2a3-26410aba4c76',
       color: 'success',
       mechanism: 'ALPHA Camp'
@@ -43,7 +43,7 @@ const Education = () => {
   ]
 
   return (
-    <Card className="w-1/2" shadow="sm">
+    <Card className="w-5/12 lg:w-1/3" shadow="sm">
       <CardHeader>
         <h4 className="text-2xl">Education and Certifications</h4>
       </CardHeader>
@@ -71,12 +71,12 @@ const Education = () => {
         <Divider />
         <p className="my-3 text-xl">Professional Certifications</p>
         {/* todo certification card */}
-        <div className="flex flex-wrap justify-between">
+        <div className="flex flex-wrap justify-between lg:flex-col">
           {certifications.map((certification, index) => (
             <Card
               key={index}
               isBlurred
-              className="mb-2 w-[calc(50%-10px)] border-none !bg-slate-600"
+              className="mb-2 w-[calc(50%-10px)] border-none !bg-slate-600 lg:mb-5 lg:w-full"
             >
               <CardHeader className="flex gap-3">
                 <div className="flex flex-col">

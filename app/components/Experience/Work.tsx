@@ -35,7 +35,7 @@ const Work = () => {
     }
   ]
   return (
-    <Card className="w-1/2" shadow="sm">
+    <Card className="w-7/12 lg:w-2/3" shadow="sm">
       <CardHeader>
         <h4 className="text-2xl">Experience</h4>
       </CardHeader>
@@ -49,7 +49,11 @@ const Work = () => {
         </div>
         {projects.map((project, index) => {
           return (
-            <Card key={index} className="mb-2 w-full !bg-slate-600" shadow="sm">
+            <Card
+              key={index}
+              className="mb-2 w-full !bg-slate-600 lg:mb-5"
+              shadow="sm"
+            >
               <CardHeader>
                 <div>
                   <h4 className="text-base">{project.name}</h4>
