@@ -83,12 +83,12 @@ const Game = () => {
   }, [gameStarted, isJumping, gameOver, jump])
 
   return (
-    <div className="relative flex h-[400px] w-[640px] items-end justify-center rounded-lg border-1 border-gray-900 bg-lime-100 shadow-lg">
+    <div className="relative flex h-[400px] w-[640px] items-end justify-center rounded-xl border-1 border-gray-900 bg-lime-100 shadow-lg">
       {/* Webcam */}
       <div className="absolute right-0 top-0 z-10 mr-2 mt-2 h-4 w-4 rounded-full bg-gray-700"></div>
 
       {/* top Bar */}
-      <div className="absolute left-0 top-0 flex h-8 w-full items-center rounded-t-lg bg-gray-900 px-4">
+      <div className="absolute left-0 top-0 flex h-8 w-full items-center rounded-t-md bg-gray-900 px-4">
         <div className="mr-2 h-2 w-2 rounded-full bg-red-500"></div>
         <div className="mr-2 h-2 w-2 rounded-full bg-yellow-500"></div>
         <div className="mr-2 h-2 w-2 rounded-full bg-green-500"></div>

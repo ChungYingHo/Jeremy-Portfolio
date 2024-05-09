@@ -2,6 +2,7 @@
 
 import React, { useEffect } from 'react'
 import Text from './components/dynamic_text/Text'
+// import HackEffect from './components/laptop/HackEffect'
 // import Laptop from './components/laptop/Laptop'
 import Game from './components/game/Game'
 import Experience from './components/Experience/Experience'

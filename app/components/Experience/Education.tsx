@@ -55,15 +55,14 @@ const Education = () => {
           <CardHeader className="flex gap-3">
             <Image
               alt="nextui logo"
-              height={40}
-              radius="sm"
-              src="https://avatars.githubusercontent.com/u/86160567?s=200&v=4"
-              width={40}
+              height={50}
+              radius="full"
+              src="/ntu.png"
+              width={50}
             />
             <div className="flex flex-col">
-              <p className="text-md">
-                National Taiwan University - Master degree of Agronomy
-              </p>
+              <p className="text-md">National Taiwan University</p>
+              <p className="my-1 text-small">Master degree of Agronomy</p>
               <p className="text-small text-default-500">2020.09-2022.07</p>
             </div>
           </CardHeader>

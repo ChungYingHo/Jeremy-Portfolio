@@ -34,7 +34,7 @@ const Matrix: React.FC<MatrixProps> = ({
     const drops: number[] = Array.from({ length: columns }, () => 1)
 
     const draw = () => {
-      ctx.fillStyle = `rgba(0, 0, 0, ${speed})`
+      ctx.fillStyle = `rgba(75, 85, 99, ${speed})`
       ctx.fillRect(0, 0, W, H)
       ctx.fillStyle = wordColor
       ctx.font = `${fontSize}px Arial`
@@ -54,7 +54,14 @@ const Matrix: React.FC<MatrixProps> = ({
     return () => clearInterval(interval)
   }, [width, height, wordColor, fontSize, speed])
 
-  return <canvas ref={canvasRef} width={width} height={height} />
+  return (
+    <canvas
+      ref={canvasRef}
+      width={width}
+      height={height}
+      className="fixed left-0 top-0 bg-gray-600"
+    />
+  )
 }
 
 export default Matrix
