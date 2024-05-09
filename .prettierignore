@@ -1,0 +1,3 @@
+# 忽略建置時的 Prettier 格式化
+build/
+out/
