@@ -16,7 +16,7 @@ const Skill = () => {
     <div className="w-full">
       <Card className="w-full">
         <CardHeader>
-          <h2 className="text-2xl font-bold">My Skills</h2>
+          <h2 className="desktop-3xl:text-2xl text-lg">My Skills</h2>
         </CardHeader>
         <Divider />
         <CardBody>

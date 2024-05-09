@@ -93,6 +93,13 @@ const Game = () => {
         <div className="mr-2 h-2 w-2 rounded-full bg-yellow-500"></div>
         <div className="mr-2 h-2 w-2 rounded-full bg-green-500"></div>
       </div>
+
+      {gameStarted && (
+        <div className="absolute right-0 top-[calc(2rem+5px)] m-4 text-lg text-gray-600">
+          Cactus Jumped: {cactusPassed}
+        </div>
+      )}
+      {/* todo game here */}
       <div className="relative h-[200px] w-[600px]">
         {!gameStarted && !gameOver && !isRestart && (
           <>
@@ -113,7 +120,7 @@ const Game = () => {
               <Button onClick={restartGame} color="danger">
                 Try Again
               </Button>
-              <p>Total score: {cactusPassed}</p>
+              <p className="text-gray-600">Total score: {cactusPassed}</p>
             </div>
 
             <div className="relative top-[130px] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
@@ -128,11 +135,6 @@ const Game = () => {
           ref={cactusRef}
           className={`relative left-[580px] top-[88px] h-[40px] w-[20px] animate-cactus bg-[url('../public/cactus.png')] bg-[length:20px_40px] ${!gameStarted ? 'hidden' : ''}`}
         ></div>
-        {gameStarted && (
-          <div className="absolute right-0 top-0 m-4 text-lg">
-            Cactus Jumped: {cactusPassed}
-          </div>
-        )}
       </div>
     </div>
   )

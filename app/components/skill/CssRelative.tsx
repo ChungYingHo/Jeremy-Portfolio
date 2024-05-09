@@ -22,7 +22,7 @@ const CssRelative = () => {
       <Divider />
       <CardBody className="flex-row gap-5">
         {/* todo scss */}
-        <Card shadow="sm" isFooterBlurred className="w-28">
+        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Sass/SCSS"
@@ -35,7 +35,7 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo tailwind */}
-        <Card shadow="sm" isFooterBlurred className="w-28">
+        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Tailwind CSS"
@@ -48,7 +48,7 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo bootstrap */}
-        <Card shadow="sm" isFooterBlurred className="w-28">
+        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Bootstrap"
@@ -61,7 +61,7 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo vuetify */}
-        <Card shadow="sm" isFooterBlurred className="w-28">
+        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Vuetify"
@@ -74,7 +74,7 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo nextui */}
-        <Card shadow="sm" isFooterBlurred className="w-28">
+        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="NextUI"

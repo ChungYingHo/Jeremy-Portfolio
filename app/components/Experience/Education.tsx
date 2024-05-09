@@ -43,13 +43,17 @@ const Education = () => {
   ]
 
   return (
-    <Card className="w-5/12 lg:w-1/3" shadow="sm">
+    <Card className="desktop-3xl:w-1/3 w-5/12" shadow="sm">
       <CardHeader>
-        <h4 className="text-2xl">Education and Certifications</h4>
+        <h4 className="desktop-3xl:text-2xl text-lg">
+          Education and Certifications
+        </h4>
       </CardHeader>
       <Divider />
       <CardBody>
-        <p className="mb-3 text-xl">Highest Education</p>
+        <p className="desktop-3xl:text-xl mb-3 font-extrabold">
+          Highest Education
+        </p>
         {/* todo education card */}
         <Card isBlurred className="mb-5 w-full border-none !bg-slate-600">
           <CardHeader className="flex gap-3">
@@ -61,21 +65,23 @@ const Education = () => {
               width={50}
             />
             <div className="flex flex-col">
-              <p className="text-md">National Taiwan University</p>
-              <p className="my-1 text-small">Master degree of Agronomy</p>
-              <p className="text-small text-default-500">2020.09-2022.07</p>
+              <p className="text-base">National Taiwan University</p>
+              <p className="my-1 text-sm">Master degree of Agronomy</p>
+              <p className="text-xs text-default-500">2020.09-2022.07</p>
             </div>
           </CardHeader>
         </Card>
         <Divider />
-        <p className="my-3 text-xl">Professional Certifications</p>
+        <p className="desktop-3xl:text-xl mb-3 font-extrabold">
+          Professional Certifications
+        </p>
         {/* todo certification card */}
-        <div className="flex flex-wrap justify-between lg:flex-col">
+        <div className="desktop-3xl:flex-col flex flex-wrap justify-between">
           {certifications.map((certification, index) => (
             <Card
               key={index}
               isBlurred
-              className="mb-2 w-[calc(50%-10px)] border-none !bg-slate-600 lg:mb-5 lg:w-full"
+              className="desktop-3xl:w-full mb-5 w-[calc(50%-10px)] border-none !bg-slate-600"
             >
               <CardHeader className="flex gap-3">
                 <div className="flex flex-col">
@@ -92,10 +98,11 @@ const Education = () => {
                     }
                     href={certification.link}
                     target="_blank"
+                    className="text-base"
                   >
                     {certification.name}
                   </Link>
-                  <p className="text-small text-default-500">
+                  <p className="text-sm text-default-500">
                     {certification.mechanism}
                   </p>
                 </div>
