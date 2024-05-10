@@ -22,7 +22,7 @@ const Framework = () => {
       <Divider />
       <CardBody className="flex-row gap-5">
         {/* todo html */}
-        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
+        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="React"
@@ -35,7 +35,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo next */}
-        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
+        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
           <CardBody className="flex items-center overflow-visible p-0">
             <Image
               alt="Next"
@@ -48,7 +48,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo vue */}
-        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
+        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Vue"
@@ -61,7 +61,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo nuxt */}
-        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
+        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Nuxt"
@@ -74,7 +74,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo pinia */}
-        <Card shadow="sm" isFooterBlurred className="desktop-3xl:w-28 w-24">
+        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Pinia"
