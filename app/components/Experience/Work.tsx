@@ -5,7 +5,8 @@ import {
   Divider,
   Link,
   CardFooter,
-  Image
+  Image,
+  Chip
 } from '@nextui-org/react'
 
 const Work = () => {
@@ -57,14 +58,16 @@ const Work = () => {
               <CardHeader>
                 <div>
                   <h4 className="text-base">{project.name}</h4>
-                  <div className="mt-1 flex flex-wrap gap-3">
+                  <div className="mt-1 flex flex-wrap gap-2">
                     {project.tech.map((tech, index) => (
-                      <div
+                      <Chip
                         key={index}
-                        className="rounded-lg bg-primary-500 px-2 py-1 text-xs text-white"
+                        className=" text-xs"
+                        color="secondary"
+                        variant="faded"
                       >
                         {tech}
-                      </div>
+                      </Chip>
                     ))}
                   </div>
                 </div>

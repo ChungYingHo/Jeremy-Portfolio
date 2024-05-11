@@ -1,6 +1,7 @@
 'use client'
 
 import React from 'react'
+import { usePathname } from 'next/navigation'
 import {
   Navbar,
   NavbarBrand,
@@ -10,15 +11,22 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Button
+  Button,
+  Image
 } from '@nextui-org/react'
 import { Logo } from './Logo'
 import GitHubIcon from './GitHubIcon'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
+  const pathname = usePathname()
 
-  const menuItems = ['Home', 'Portfolio', 'Blog', 'GitHub']
+  const menuItems = [
+    { name: 'Home', href: '/' },
+    { name: 'Portfolio', href: '/portfolio' },
+    { name: 'Blog', href: 'https://codefictionist.com/' },
+    { name: 'GitHub', href: 'https://github.com/ChungYingHo' }
+  ]
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -28,19 +36,24 @@ export default function Header() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Logo />
-          <p className="font-bold text-foreground">Chung-Ying</p>
+          {/* <Logo /> */}
+          <Image src="/logo.png" alt="Chung-Ying" width={36} height={36} />
+          <p className="ml-1 font-bold text-foreground">Chung-Ying</p>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden gap-4 sm:flex" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="#">
+          <Link color={pathname === '/' ? 'secondary' : 'foreground'} href="/">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#" aria-current="page">
+          <Link
+            href="/portfolio"
+            aria-current="page"
+            color={pathname === '/portfolio' ? 'secondary' : 'foreground'}
+          >
             Portfolio
           </Link>
         </NavbarItem>
@@ -70,9 +83,9 @@ export default function Header() {
       </NavbarContent>
       <NavbarMenu>
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link color="primary" className="w-full" href="#" size="lg">
-              {item}
+          <NavbarMenuItem key={`${item.name}-${index}`}>
+            <Link color="primary" className="w-full" href={item.href} size="lg">
+              {item.name}
             </Link>
           </NavbarMenuItem>
         ))}

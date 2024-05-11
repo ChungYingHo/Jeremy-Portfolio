@@ -97,8 +97,9 @@ const Education = () => {
                         | undefined
                     }
                     href={certification.link}
-                    target="_blank"
+                    showAnchorIcon
                     className="text-base"
+                    isExternal
                   >
                     {certification.name}
                   </Link>
