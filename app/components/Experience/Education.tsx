@@ -16,7 +16,7 @@ const Education = () => {
       color: 'success',
       mechanism: 'Meta, Coursera'
     },
-        {
+    {
       name: 'Meta Back-End Developer',
       link: '#',
       color: 'warning',
@@ -43,7 +43,7 @@ const Education = () => {
   ]
 
   return (
-    <Card className="2xl:w-[45%]" shadow="sm">
+    <Card className="w-full 2xl:w-[45%]" shadow="sm">
       <CardHeader>
         <h4 className="desktop-3xl:text-2xl text-lg">
           Education and Certifications
@@ -55,7 +55,7 @@ const Education = () => {
           Highest Education
         </p>
         {/* todo education card */}
-        <Card isBlurred className="2xl:mb-3 w-full border-none !bg-slate-600">
+        <Card isBlurred className="w-full border-none !bg-slate-600 2xl:mb-3">
           <CardHeader className="flex gap-3">
             <Image
               alt="nextui logo"
@@ -81,7 +81,7 @@ const Education = () => {
             <Card
               key={index}
               isBlurred
-              className="2xl:mb-3 w-[calc(50%-10px)] border-none !bg-slate-600"
+              className="mb-5 w-full border-none !bg-slate-600 2xl:mb-3 2xl:w-[calc(50%-10px)]"
             >
               <CardHeader className="flex gap-3">
                 <div className="flex flex-col">

@@ -14,14 +14,17 @@ import mysqlIcon from '@/public/sql-mysql.svg'
 
 const Backend = () => {
   return (
-    <Card isBlurred className="w-fit border-none !bg-slate-600">
+    <Card
+      isBlurred
+      className="mt-5 w-full border-none !bg-slate-600 2xl:mt-0 2xl:w-fit"
+    >
       <CardHeader>
         <p>Front-End Backend</p>
       </CardHeader>
       <Divider />
-      <CardBody className="flex-row gap-5">
+      <CardBody className="flex-row flex-wrap gap-5">
         {/* todo nodejs */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Nodejs"
@@ -34,7 +37,7 @@ const Backend = () => {
           </CardFooter>
         </Card>
         {/* todo python */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex items-center overflow-visible p-0">
             <Image
               alt="Python"
@@ -47,7 +50,7 @@ const Backend = () => {
           </CardFooter>
         </Card>
         {/* todo postgresql */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Postgresql"
@@ -60,7 +63,7 @@ const Backend = () => {
           </CardFooter>
         </Card>
         {/* todo mysql */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Mysql"

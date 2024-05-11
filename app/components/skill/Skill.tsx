@@ -20,13 +20,13 @@ const Skill = () => {
         </CardHeader>
         <Divider />
         <CardBody>
-          <div className="flex justify-between">
+          <div className="flex flex-col justify-between 2xl:flex-row">
             {/* front-end basic skill */}
             <Basic />
             {/* front framework */}
             <Framework />
           </div>
-          <div className="mt-16 flex justify-between">
+          <div className="mt-5 flex flex-col justify-between 2xl:mt-16 2xl:flex-row">
             {/* front end CssRelative skill icons */}
             <CssRelative />
             {/* backend skill */}

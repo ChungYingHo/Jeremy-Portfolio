@@ -14,14 +14,14 @@ import tsIcon from '@/public/typescript.svg'
 
 const Basic = () => {
   return (
-    <Card isBlurred className="w-fit border-none !bg-slate-600">
+    <Card isBlurred className="w-full border-none !bg-slate-600 2xl:w-fit">
       <CardHeader>
         <p>Front-End Basic</p>
       </CardHeader>
       <Divider />
-      <CardBody className="flex-row gap-5">
+      <CardBody className="flex-row flex-wrap gap-5">
         {/* todo html */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="HTML"
@@ -34,7 +34,7 @@ const Basic = () => {
           </CardFooter>
         </Card>
         {/* todo css */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="CSS"
@@ -47,7 +47,7 @@ const Basic = () => {
           </CardFooter>
         </Card>
         {/* todo js */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="JavaScript"
@@ -60,7 +60,7 @@ const Basic = () => {
           </CardFooter>
         </Card>
         {/* todo ts */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="TypeScript"

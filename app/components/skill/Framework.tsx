@@ -15,14 +15,17 @@ import piniaIcon from '@/public/pinia.svg'
 
 const Framework = () => {
   return (
-    <Card isBlurred className="w-fit border-none !bg-slate-600">
+    <Card
+      isBlurred
+      className="mt-5 w-full border-none !bg-slate-600 2xl:mt-0 2xl:w-fit"
+    >
       <CardHeader>
         <p>Front-End Framework</p>
       </CardHeader>
       <Divider />
-      <CardBody className="flex-row gap-5">
+      <CardBody className="flex-row flex-wrap gap-5">
         {/* todo html */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="React"
@@ -35,7 +38,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo next */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex items-center overflow-visible p-0">
             <Image
               alt="Next"
@@ -48,7 +51,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo vue */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Vue"
@@ -61,7 +64,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo nuxt */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Nuxt"
@@ -74,7 +77,7 @@ const Framework = () => {
           </CardFooter>
         </Card>
         {/* todo pinia */}
-        <Card shadow="sm" isFooterBlurred className="2xl:w-24">
+        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Pinia"

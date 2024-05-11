@@ -35,23 +35,25 @@ const Work = () => {
     }
   ]
   return (
-    <Card className="2xl:w-[55%]" shadow="sm">
+    <Card className="w-full 2xl:w-[55%]" shadow="sm">
       <CardHeader>
-        <h4 className="2xl:text-2xl text-lg">Experience</h4>
+        <h4 className="text-lg 2xl:text-2xl">Experience</h4>
       </CardHeader>
       <Divider />
       <CardBody>
         <div className="mb-3 flex items-end gap-3">
-          <p className="2xl:text-base font-extrabold">
+          <p className="font-extrabold 2xl:text-base">
             GEOSAT Aerospace & Technology
           </p>
-          <p className="2xl:text-sm">
-            Front-End Engineer, 2023-now
-          </p>
+          <p className="2xl:text-sm">Front-End Engineer, 2023-now</p>
         </div>
         {projects.map((project, index) => {
           return (
-            <Card key={index} className="2xl:mb-3 w-full !bg-slate-600" shadow="sm">
+            <Card
+              key={index}
+              className="mb-5 w-full !bg-slate-600 2xl:mb-3"
+              shadow="sm"
+            >
               <CardHeader>
                 <div>
                   <h4 className="text-base">{project.name}</h4>
