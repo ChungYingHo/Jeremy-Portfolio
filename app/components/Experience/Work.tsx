@@ -41,7 +41,7 @@ const Work = () => {
       </CardHeader>
       <Divider />
       <CardBody>
-        <div className="mb-3 flex items-end gap-3">
+        <div className="mb-3 flex flex-col md:flex-row md:items-end md:gap-3">
           <p className="font-extrabold 2xl:text-base">
             GEOSAT Aerospace & Technology
           </p>
@@ -57,7 +57,7 @@ const Work = () => {
               <CardHeader>
                 <div>
                   <h4 className="text-base">{project.name}</h4>
-                  <div className="mt-1 flex gap-3">
+                  <div className="mt-1 flex flex-wrap gap-3">
                     {project.tech.map((tech, index) => (
                       <div
                         key={index}

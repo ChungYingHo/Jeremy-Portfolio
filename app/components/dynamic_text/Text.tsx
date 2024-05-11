@@ -28,11 +28,13 @@ export default function Text() {
   }, [showFirstText])
 
   return (
-    <div>
-      <p className="mb-10 whitespace-nowrap text-xl text-cyan-200">
+    <div className="mt-5 hidden md:block xl:mt-0">
+      <p className="mb-7 whitespace-nowrap text-xl text-cyan-200 xl:mb-10">
         Hi, my name is
       </p>
-      <p className="mb-5 text-5xl font-bold text-slate-300">Chung-Ying, Ho.</p>
+      <p className="mb-3 text-5xl font-bold text-slate-300 xl:mb-5">
+        Chung-Ying, Ho.
+      </p>
       <div className="relative flex items-center gap-5 overflow-hidden">
         <p className="whitespace-nowrap text-5xl font-bold text-slate-400">
           I am{' '}

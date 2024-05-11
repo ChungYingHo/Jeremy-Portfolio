@@ -83,7 +83,7 @@ const Game = () => {
   }, [gameStarted, isJumping, gameOver, jump])
 
   return (
-    <div className="relative flex h-[40vh] w-[calc(40vw-7rem+30px)] items-end justify-center rounded-xl border-1 border-gray-900 bg-lime-100 shadow-lg desktop-3xl:w-[calc(40vw-18rem+30px)]">
+    <div className="relative mt-5 hidden h-[55vh] w-full items-end justify-center rounded-xl border-1 border-gray-900 bg-lime-100 shadow-lg md:flex xl:mt-0 xl:h-[40vh] xl:w-[calc(40vw-7rem+30px)]">
       {/* Webcam */}
       <div className="absolute right-0 top-0 z-10 mr-2 mt-2 h-4 w-4 rounded-full bg-gray-700"></div>
 
@@ -100,7 +100,7 @@ const Game = () => {
         </div>
       )}
       {/* todo game here */}
-      <div className="relative h-[30vh] w-[calc(40vw-7rem)] desktop-3xl:w-[calc(40vw-18rem)]">
+      <div className="relative h-[30vh] w-[calc(100%-7rem-30px)] xl:w-[calc(40vw-7rem)]">
         {!gameStarted && !gameOver && !isRestart && (
           <>
             <Button
@@ -111,7 +111,7 @@ const Game = () => {
               Start Game
             </Button>
             <div className="relative top-[calc(30vh-70px)] h-[70px] w-[70px] bg-[url('../public/dinosaur.png')] bg-[length:auto_70px]"></div>
-            <div className="relative left-[calc(40vw-7rem-20px)] top-[calc(30vh-70px-40px)] h-[40px] w-[20px] animate-castusDisplay bg-[url('../public/cactus.png')] bg-[length:20px_40px] desktop-3xl:left-[calc(40vw-18rem-20px)]"></div>
+            <div className="desktop-3xl:left-[calc(40vw-18rem-20px)] relative left-[calc(40vw-7rem-20px)] top-[calc(30vh-70px-40px)] h-[40px] w-[20px] animate-castusDisplay bg-[url('../public/cactus.png')] bg-[length:20px_40px]"></div>
           </>
         )}
         {gameOver && (

@@ -24,7 +24,11 @@ const Backend = () => {
       <Divider />
       <CardBody className="flex-row flex-wrap gap-5">
         {/* todo nodejs */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Nodejs"
@@ -37,7 +41,11 @@ const Backend = () => {
           </CardFooter>
         </Card>
         {/* todo python */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex items-center overflow-visible p-0">
             <Image
               alt="Python"
@@ -50,7 +58,11 @@ const Backend = () => {
           </CardFooter>
         </Card>
         {/* todo postgresql */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Postgresql"
@@ -63,7 +75,11 @@ const Backend = () => {
           </CardFooter>
         </Card>
         {/* todo mysql */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Mysql"

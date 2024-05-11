@@ -22,7 +22,11 @@ const CssRelative = () => {
       <Divider />
       <CardBody className="flex-row flex-wrap gap-5">
         {/* todo scss */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Sass/SCSS"
@@ -35,7 +39,11 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo tailwind */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Tailwind CSS"
@@ -48,7 +56,11 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo bootstrap */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Bootstrap"
@@ -61,7 +73,11 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo vuetify */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="Vuetify"
@@ -74,7 +90,11 @@ const CssRelative = () => {
           </CardFooter>
         </Card>
         {/* todo nextui */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="NextUI"

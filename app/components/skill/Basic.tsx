@@ -21,7 +21,11 @@ const Basic = () => {
       <Divider />
       <CardBody className="flex-row flex-wrap gap-5">
         {/* todo html */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="HTML"
@@ -34,7 +38,11 @@ const Basic = () => {
           </CardFooter>
         </Card>
         {/* todo css */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="CSS"
@@ -47,7 +55,11 @@ const Basic = () => {
           </CardFooter>
         </Card>
         {/* todo js */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="JavaScript"
@@ -60,7 +72,11 @@ const Basic = () => {
           </CardFooter>
         </Card>
         {/* todo ts */}
-        <Card shadow="sm" isFooterBlurred className="w-48 2xl:w-24">
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
           <CardBody className="flex overflow-visible p-0">
             <Image
               alt="TypeScript"
