@@ -67,7 +67,7 @@ const Education = () => {
             <div className="flex flex-col">
               <p className="text-base">National Taiwan University</p>
               <p className="my-1 text-sm">Master degree of Agronomy</p>
-              <p className="text-xs text-default-500">2020.09-2022.07</p>
+              <p className="text-xs text-default-500">2019.09-2021.08</p>
             </div>
           </CardHeader>
         </Card>
