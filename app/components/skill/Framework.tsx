@@ -12,6 +12,7 @@ import nextIcon from '@/public/next.svg'
 import vueIcon from '@/public/vue.svg'
 import nuxtIcon from '@/public/nuxt.svg'
 import piniaIcon from '@/public/pinia.svg'
+import reduxIcon from '@/public/redux.svg'
 
 const Framework = () => {
   return (
@@ -24,7 +25,7 @@ const Framework = () => {
       </CardHeader>
       <Divider />
       <CardBody className="flex-row flex-wrap gap-5">
-        {/* todo html */}
+        {/* todo react */}
         <Card
           shadow="sm"
           isFooterBlurred
@@ -56,6 +57,23 @@ const Framework = () => {
           </CardBody>
           <CardFooter className="mt-3 flex justify-center bg-white/10 text-small">
             <b>Next</b>
+          </CardFooter>
+        </Card>
+        {/* todo redux */}
+        <Card
+          shadow="sm"
+          isFooterBlurred
+          className="w-[calc(50%-1.25rem)] md:w-48 2xl:w-24"
+        >
+          <CardBody className="flex overflow-visible p-0">
+            <Image
+              alt="Redux"
+              className="mx-auto mt-3 w-2/3 object-contain"
+              src={reduxIcon}
+            />
+          </CardBody>
+          <CardFooter className="mt-3 flex justify-center bg-white/10 text-small">
+            <b>Redux</b>
           </CardFooter>
         </Card>
         {/* todo vue */}

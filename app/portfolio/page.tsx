@@ -13,19 +13,11 @@ const Page = () => {
   const portfolios = [
     {
       name: 'PLANTAE Taiwan',
-      link: 'https://plantae-taiwan.vercel.app/',
+      link: 'https://plantae-tw.vercel.app/',
       color: 'warning',
       img: '/portfolio/plantae.jpg',
       description: 'This is the brand image website of PLANTAE Taiwan.',
-      tech: [
-        'Nuxt3',
-        'Pinia',
-        'TypeScript',
-        'Tailwind CSS',
-        'Sass/SCSS',
-        'Node.js',
-        'Postgres SQL'
-      ]
+      tech: ['Next.js', 'Redux', 'TypeScript', 'Tailwind CSS', 'Postgres SQL']
     }
   ]
   return (

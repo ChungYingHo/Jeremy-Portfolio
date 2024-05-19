@@ -38,12 +38,9 @@ export default function Home() {
       <div className="my-7 flex w-full items-center bg-gray-600 px-8 xl:px-24 2xl:my-0 2xl:h-[calc(100vh-4rem)] 2xl:snap-center 2xl:px-48">
         <Experience />
       </div>
-      <div className="flex w-full items-center justify-center bg-gray-600 px-8 xl:px-24 2xl:h-[calc(100vh-4rem)] 2xl:snap-center 2xl:px-48">
+      <div className="flex w-full items-center justify-center bg-gray-600 px-8 xl:px-24 2xl:h-[calc(100vh-4rem)] 2xl:snap-center 2xl:px-36">
         <Skill />
       </div>
-      {/* <div className="flex h-[calc(100vh-4rem)] w-full snap-center items-center justify-center bg-gray-600 px-28">
-          <Game />
-        </div> */}
     </main>
   )
 }

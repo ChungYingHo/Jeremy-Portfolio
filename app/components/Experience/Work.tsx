@@ -63,7 +63,7 @@ const Work = () => {
                       <Chip
                         key={index}
                         className=" text-xs"
-                        color="secondary"
+                        color="warning"
                         variant="faded"
                       >
                         {tech}
